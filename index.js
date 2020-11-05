@@ -101,6 +101,7 @@ module.exports = async (Component, opts = {}) => {
   } else {
     result = await page.screenshot({
       type: type,
+      fullPage: true,
       clip: {
         x: 0,
         y,
