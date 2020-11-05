@@ -50,6 +50,7 @@ const getWebfontCSS = (fontpath) => {
 
 module.exports = async (Component, opts = {}) => {
   const {
+    y = 0,
     css = '',
     filename,
     outDir,
@@ -102,7 +103,7 @@ module.exports = async (Component, opts = {}) => {
       type: type,
       clip: {
         x: 0,
-        y: 0,
+        y,
         width,
         height,
       },
